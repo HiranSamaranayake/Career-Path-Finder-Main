@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  background: linear-gradient(135deg, #08035f, #0a0543);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+.about .content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #0b0b0b;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #343333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #151f6d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b0c48;
+}
+
+.team {
+  display: none;
+  margin-top: 50px;
+}
+
+.team h3 {
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.team-member h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #777;
+}
+
+footer {
+  background-color: #070d36;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+@media (max-width: 498px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    background-color: #151f6d;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #1b0c48;
+    transform: scale(1.05);
+  }
+
+  .about {
+    padding: 30px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .team h3 {
+    font-size: 24px;
+  }
+
+  .team-member {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .team-member img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}

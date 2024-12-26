@@ -1,0 +1,285 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f7fb;
+    color:rgb(66, 60, 60);
+    text-align: left;
+
+/* Degree Selection Section */
+.degree-select {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.degree-select label {
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.degree-select select {
+    padding: 12px 18px;
+    font-size: 18px;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    outline: none;
+    width: 70%;
+    max-width: 450px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.degree-select select:focus {
+    border-color: #388e3c;
+    box-shadow: 0 0 10px rgba(56, 142, 60, 0.5);
+}
+
+.degree-select button {
+    margin-top: 20px;
+    padding: 14px 22px;
+    font-size: 18px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.degree-select button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.degree-select button:active {
+    transform: scale(1);
+}
+
+/* Degree Details Section */
+#details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#details-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.degree-details {
+    display: none;
+    padding: 30px;
+    border: 2px solid #a80606;
+    border-radius: 12px;
+    margin-top: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.degree-details h3 {
+    font-size: 26px;
+    color: #0d7704;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.degree-details h4 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 12px 0;
+    color: #2b046b;
+    text-align: left;
+}
+
+.degree-details strong {
+    font-weight: bold;
+    color: #065a74;
+    
+}
+
+.salary-value {
+    color: red; /* Change the color to red */
+  
+}
+.highlight{
+    color: deeppink;
+}
+.highlight-text{
+    color:goldenrod ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .degree-select select {
+        width: 85%;
+    }
+
+    #details-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 498px) {
+    body {
+        background-color: #f0f5f9;
+    }
+
+    .degree-select {
+        margin: 30px 0;
+        text-align: center; /* Ensure the degree-select section stays centered */
+    }
+
+    .degree-select label {
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .degree-select select {
+        font-size: 16px;
+        width: 85%; /* Ensure the select element fits on mobile */
+    }
+
+    .degree-select button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+    #details-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .degree-details h3 {
+        font-size: 22px;
+    }
+
+    .degree-details p {
+        font-size: 16px;
+    }
+
+   
+}
+/* Header Css */
+nav {
+    background-color: rgba(211, 211, 211, 1.444); /* Initial background with opacity */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(209, 188, 104, 0.448);
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+nav:hover {
+    background-color: rgba(232, 185, 91, 0.7); /* Change background on hover */
+    transform: translateY(-5px); /* Move nav up a little on hover */
+    box-shadow: 0 8px 12px rgba(174, 160, 3, 0.6); /* Increase shadow for effect */
+}
+
+/* Optional: Adding a smooth pulse effect for emphasis */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Slightly increase size */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav:active {
+    animation: pulse 0.5s ease-out; /* Pulse effect on click */
+}
+
+
+
+nav ul {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #067b52;
+    transform: scale(1.1);
+}
+/* Media Query for Small Screens (Mobile Devices) */
+@media screen and (max-width: 498px) {
+    nav {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack the navbar items vertically */
+        align-items: center;  /* Center align the navbar items */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;  /* Space between navbar items */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Increase font size for better readability */
+        width: 100%;  /* Make each link take the full width */
+        text-align: center;  /* Center the text inside the link */
+        padding: 12px;  /* Add padding for easy clicking */
+    }
+}
+
+.background-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container without distorting aspect ratio */
+    z-index: -1; /* Places the video behind the content */
+}
+
+
